@@ -15,3 +15,7 @@ test('\'XYZ\' returns \'YZA\'', () => {
 test('\'abc\' returns \'YZA\'', () => {
     expect(caesar('abc', 1)).toBe('bcd');
 });
+
+test('\'a,.c\' returns \'b,.d\'', () => {
+    expect(caesar('a,.c', 1)).toBe('b,.d');
+});
